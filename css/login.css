@@ -189,7 +189,7 @@ iframe {
   background: -webkit-linear-gradient(bottom, #0250c5, #c4d43f);
   background: -o-linear-gradient(bottom, #0250c5, #c4d43f);
   background: -moz-linear-gradient(bottom, #0250c5, #c4d43f);
-  background: linear-gradient(bottom, #0250c5, #c4d43f);
+  background: linear-gradient(to top right, #08aeea 0%, #b721ff 100%);
   position: relative;
   z-index: 1;
 }
@@ -367,7 +367,7 @@ iframe {
   height: 10px;
   border-radius: 3px;
   background: #fff;
-  border: 2px solid #d33f8d;
+  border: 2px solid #0250c5;
   left: 0;
   top: 48%;
   -webkit-transform: translateY(-50%);
@@ -405,7 +405,7 @@ iframe {
   width: 100%;
   height: 40px;
   border-radius: 3px;
-  background: #d33f8d;
+  background: #0250c5;
   display: -webkit-box;
   display: -webkit-flex;
   display: -moz-box;
@@ -422,7 +422,7 @@ iframe {
 }
 
 .login100-form-btn:hover {
-  background: #333333;
+  background:#08aeea;
 }
 
 /*------------------------------------------------------------------

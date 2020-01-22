@@ -214,3 +214,6 @@ img.pull-left { margin-right: 10px; }
     left: -147px /* same as your text width */
   }
 }
+.content-para{
+  font-size: 12px;
+}
