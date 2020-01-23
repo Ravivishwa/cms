@@ -212,3 +212,13 @@ img.pull-left { margin-right: 10px; }
 .content-para{
   font-size: 12px;
 }
+.events-list{
+	list-style: none;
+}
+#rightside-card{
+	border-top: 5px solid #0ca4ff;
+	padding: 10px 0 40px 10px;
+}
+.card-contents{
+	font-size: 14px;
+}
