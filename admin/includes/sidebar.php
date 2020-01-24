@@ -513,32 +513,32 @@
               <ul class="nav nav-treeview">
                 <li class="nav-item">
                   <a href="#" class="nav-link">
-                    <i class="far fa-dot-circle nav-icon"></i>
-                    <p>Adhoc Payroll Items</p>
+                    <i class="fas fa-file-invoice-dollar"></i>
+                    <p> Adhoc Payroll Items</p>
                   </a>
                 </li>
                 <li class="nav-item">
                   <a href="#" class="nav-link">
-                    <i class="far fa-dot-circle nav-icon"></i>
+                    <i class="fas fa-user-clock"></i>
                     <p> Time Attendance</p>
                   </a>
                 </li>
                 <li class="nav-item">
                   <a href="#" class="nav-link">
-                    <i class="far fa-dot-circle nav-icon"></i>
+                    <i class="fas fa-funnel-dollar"></i>
                     <p> Process Payroll</p>
                   </a>
                 </li>
                 <li class="nav-item">
                   <a href="#" class="nav-link">
-                    <i class="far fa-dot-circle nav-icon"></i>
+                    <i class="fas fa-money-check"></i>
                     <p> Electronic Payment</p>
                   </a>
                 </li>
                 <li class="nav-item">
                   <a href="#" class="nav-link">
-                    <i class="far fa-dot-circle nav-icon"></i>
-                    <p>  CP Receipt</p>
+                    <i class="fas fa-file-invoice"></i>
+                    <p> CP Receipt</p>
                   </a>
                 </li>
               </ul>
