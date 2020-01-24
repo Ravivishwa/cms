@@ -112,10 +112,8 @@ img.pull-left { margin-right: 10px; }
 }
 
 .nav-dropdown1:hover{
-    color: #f63;
+    color:#0ca4ff;
 }
-
-
                     /* navabar header 2 */
 
 .logo1{
@@ -157,17 +155,14 @@ img.pull-left { margin-right: 10px; }
 	color:#fff;
 	padding: 30px 50px 80px 50px;
 	border-top: 5px solid;
-	border-color: #9ACD32	;
-}
-.footer-container{
-	
+	border-color: #0ca4ff 	;
 }
 .footer-para{
 	font-size: 10px;
 }
 .footer-heading{
 	padding-top: 10px;
-	color: #9ACD32;	
+	color: #0ca4ff ;	
 }
 .footer-row{
 	padding-left: 50px;
@@ -183,7 +178,7 @@ img.pull-left { margin-right: 10px; }
 	color: white;
 }
 #ftl:hover{
-	color: #9ACD32;
+	color: #0ca4ff ;
 	text-decoration: none;
 }
 
@@ -216,4 +211,14 @@ img.pull-left { margin-right: 10px; }
 }
 .content-para{
   font-size: 12px;
+}
+.events-list{
+	list-style: none;
+}
+#rightside-card{
+	border-top: 5px solid #0ca4ff;
+	padding: 10px 0 40px 10px;
+}
+.card-contents{
+	font-size: 14px;
 }
