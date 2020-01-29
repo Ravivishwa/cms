@@ -1,17 +1,37 @@
 <?php
 require_once ('config.php');
-// Initialize the session
 session_start();
+if(isset($_POST['post'])){
+	$url = "https://www.google.com/recaptcha/api/siteverify";
+	$data = [
+		"secret" => "6LdXs9IUAAAAAK469mX1R54lUprc5JrMTtSPYYu8",
+		"response" => $_POST['token'],
+		"remoteip" => $_SERVER['REMOTE_ADDR']
+	];
+
+	$options = [
+		'http' => [
+			'header' => "Content-type: application/x-www-form-urlencoded\r\n",
+			'method' => "POST",
+			'content' => http_build_query($data) 
+		]
+	];
+
+	$context = stream_context_create($options);
+	$response = file_get_contents($url,false,$context);
+	
+	echo "<pre>";
+	$res = json_decode($response,true);
+	if($res['success'] == true){
+		
+	}
+}
  
 // Check if the user is already logged in, if yes then redirect him to welcome page
 if(isset($_SESSION["loggedin"]) && $_SESSION["loggedin"] === true){
     header("location: welcome.php");
     exit;
 }
- 
-// Include config file
-require_once "config.php";
- 
 // Define variables and initialize with empty values
 $username = $password = "";
 $username_err = $password_err = "";
@@ -89,7 +109,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
 			<div class="wrap-login100 p-l-50 p-r-50 p-t-60 p-b-30">
 				<form class="login100-form validate-form" action="login.php" method="POST">
 					<span class="login100-form-title p-b-29">
-						<img class="imglogo" src="img/logo1.png">
+						<img class="imglogo" src="assets/images/logo1.png">
 					</span>
 
 <!-- 					<div class="wrap-input100 validate-input m-b-18" data-validate = "Valid email is required: ex@abc.xyz">
@@ -121,14 +141,15 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
 						<label class="label-checkbox100" for="ckb1">
 							Remember me
 						</label>
+					<div class="g-recaptcha" data-sitekey="6LdketIUAAAAADySiRrG3e7yyX3Hhf1opjRLWns4"></div>
 					</div>
 					
 					<div class="container-login100-form-btn p-t-15">
-						<input class="login100-form-btn" name="login" value="Login" type="submit">
-					</div>
+						<input class="login100-form-btn" name="post" value="Login" type="submit">
+
 
 					<div class="contact100-form m-l-4 p-t-5">
-						<a href="register.php">
+						<a href="register.php" title=" 'Please contact HR Unit to register your account as verified' ">
 							<label class="label-login-content" >
 									Register
 							</label>							
@@ -148,6 +169,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
 							</label>
 						</a>	
 					</div>
+					<input type="hidden" id="token" name="token">
 				</form>
 			</div>
 		</div>
@@ -157,6 +179,13 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
 	<script src="vendor/bootstrap/js/bootstrap.min.js"></script>
 	<script src="vendor/select2/select2.min.js"></script>
 	<script src="js/main.js"></script>
-
+	<script src="https://www.google.com/recaptcha/api.js?render=6LdXs9IUAAAAAM9cFzz9GvJYBIO0ICnD2qfl-hRu"></script>
 </body>
+	<script>
+	grecaptcha.ready(function() {
+	    grecaptcha.execute('6LdXs9IUAAAAAM9cFzz9GvJYBIO0ICnD2qfl-hRu', {action: 'homepage'}).then(function(token) {
+	    	$('#token').val(token);
+	    });
+	});
+	</script>
 </html>

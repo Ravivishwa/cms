@@ -210,12 +210,16 @@ iframe {
 }
 
 .wrap-login100 {
-  width: 350px;
+  width: 300px;
+  /* height: 490px; */
   background: #fff;
   border-radius: 3px;
   overflow: hidden;
 }
 
+.grecaptcha-badge{
+  z-index: 1
+}
 
 
 /*------------------------------------------------------------------

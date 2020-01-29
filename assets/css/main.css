@@ -222,3 +222,87 @@ img.pull-left { margin-right: 10px; }
 .card-contents{
 	font-size: 14px;
 }
+#fa{
+   color: #007bff;
+}
+#img-links{
+	width: 50px;
+	height: 50px;
+	
+}
+.link-div{
+	display: inline-block;
+}
+
+#fs-png{
+	width: 40px;
+	padding: 5px ;
+	margin-right: 5px;
+}
+
+.surv-feed{
+	background-color: #e5e5e5;
+	height: 40px;
+	border-radius: 3px;
+	color: #343a40;
+	font-size: 14px;
+	font-weight: 600;
+
+}
+
+#left-contain{
+	font-size: 13px;
+    font-weight: 600;
+    color: #212529;
+}
+#links-form{
+	color: black;
+	text-decoration: none;
+}
+#links-form:hover{
+    color: #0ca4ff;
+}
+.img-head{
+	width: 18px;
+}
+.hrline{	
+	border-top: 1px solid;
+    border-style: dashed;
+    border-color: #dcdcdc;
+}
+#links{
+	text-decoration: none;
+}
+#titles:hover{
+	color: black;
+}
+#hr-lines{
+	margin-top: 6px;
+	margin-bottom: 6px;
+}
+#titles{
+	font-size: 14px;
+	color: #0ca4ff;
+	font-weight: bold;
+}
+.contents-para{
+	font-size: 13px;
+	color: #6c757d;
+}
+#plus-icon{
+	color: black;
+}
+#para-links{
+	color: #0ca4ff; 
+}
+.social-links{
+	width: 20px;
+	margin-right: 4px;
+	margin-left: 5px ;
+}
+.social-para{
+	display: flex;
+	float: right;
+	font-size: 14px;
+	color: #6c757d;
+}

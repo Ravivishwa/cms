@@ -8,7 +8,7 @@
         </div>
         <div class="col-lg-4">
           <h6 class="footer-heading">LINKS</h6>
-          <a class="footer-links1" id="ftl" href="">Privacy Policy</a>
+          <a class="footer-links1" id="ftl" href="./policy.php">Privacy Policy</a>
           <a class="footer-links1" id="ftl" href="">Contact</a>
           <a class="footer-links1" id="ftl" href="">security policy</a><br>
           <a class="footer-links2" id="ftl" href="">Site Map</a>
