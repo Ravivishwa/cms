@@ -7,7 +7,7 @@
       <div class="col-sm-9">
         <div class="row">
           <div class="col-sm-12">
-            <div><h5><strong>QUICK LINKS</strong></h5></div>    
+            <div><h5><strong>QUICK LINKS</strong></h5></div>
             <div class="link-div"><img id="img-links" src="assets/images/home.png"></div>
             <div class="link-div"><img id="img-links" src="assets/images/calendar.png"></div>
             <div class="link-div"><img id="img-links" src="assets/images/sms.png"></div>
@@ -35,7 +35,7 @@
                   <li>Event 3</li><br>
                   <li>Event 4</li><br>
                   <li>Event 5</li><br>
-                </ul>                
+                </ul>
               </div>
             </div>
           </div>
@@ -69,7 +69,7 @@
                 <h5 class="card-title">Announcements</h5>
                 <p class="card-contents">With supporting text below as a natural lead-in to additional content.  Lorem ipsum dolor sit amet, consectetur adipisicing elit Lorem ipsum dolor sit amet, consectetur adipisicing elit Lorem ipsum dolor sit amet, consectetur adipisicing elit</p>
               </div>
-            </div> 
+            </div>
           </div>
           <div class="col-sm-12 pt-2">
             <div class="card">
@@ -77,8 +77,8 @@
                 <h5 class="card-title">Tag cloud</h5>
                 <p class="card-contents">With supporting text below as a natural lead-in to additional content  Lorem ipsum dolor sit amet, consectetur adipisicing elit  Lorem ipsum dolor sit amet, consectetur adipisicing elit  Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
               </div>
-            </div>            
-          </div>          
+            </div>
+          </div>
           <div class="col-sm-12 pt-2">
             <div class="card">
               <div class="card-body" id="rightside-card">
@@ -90,13 +90,13 @@
                 <p class="card-contents"><input type="radio" name="card"> d. Others</p>
                 <button class="btn btn-primary" type="submit">Vote</button>
               </div>
-            </div>             
+            </div>
           </div>
           <div class="col-sm-12">
-            <a href=""><div class="surv-feed"><p><img id="fs-png" src="assets/images/chat.png">Feedback<p/></div></a>
+            <a href="external.php"><div class="surv-feed"><p><img id="fs-png" src="assets/images/chat.png">Feedback<p/></div></a>
           </div>
           <div class="col-sm-12 pt-1">
-           <a href=""><div class="surv-feed mb-2"><p><img id="fs-png" src="assets/images/checkmark.png">Survey<p/></div></a>
+           <a href="external.php"><div class="surv-feed mb-2"><p><img id="fs-png" src="assets/images/checkmark.png">Survey<p/></div></a>
           </div>
           <div class="col-sm-12">
            <a href="https://www.google.com/maps/place/MZ+iTech+Solution/@2.0117994,112.5496707,15.25z/data=!4m5!3m4!1s0x0:0x6a56561dece57d!8m2!3d2.0103903!4d112.5483939" target="_blank"><div><img src="assets/images/MZ ITECH SOLUTION HQ MAP LOCATION.gif" ></div></a>
@@ -104,5 +104,5 @@
         </div>
       </div>
     </div>
-  </div>  
+  </div>
 </div><br>

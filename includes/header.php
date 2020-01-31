@@ -2,21 +2,16 @@
 session_start();
 $counter_name = "counter.txt";
 
-// Check if a text file exists.
-// If not create one and initialize it to zero.
 if (!file_exists($counter_name)) {
   $f = fopen($counter_name, "w");
   fwrite($f,"0");
   fclose($f);
 }
 
-// Read the current value of our counter file
 $f = fopen($counter_name,"r");
 $counterVal = fread($f, filesize($counter_name));
 fclose($f);
 
-// Has visitor been counted in this session?
-// If not, increase counter value by one
 if(!isset($_SESSION['hasVisited'])){
   $_SESSION['hasVisited']="yes";
   $counterVal++;
@@ -35,14 +30,14 @@ if(!isset($_SESSION['hasVisited'])){
 	     <title>Rapid</title>
   	<link rel="stylesheet" type="text/css" href="assets/css/main.css">
   	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
-   
+
     <link rel="stylesheet" type="text/css" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css">
   	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="./js/main.js"></script>
    <script defer src="https://use.fontawesome.com/releases/v5.0.8/js/all.js" integrity="sha384-SlE991lGASHoBfWbelyBPLsUlwY1GwNDJo3jSJO04KZ33K2bwfV9YBauFfnzvynJ" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
-    
+
 
 </head>
 <body>
@@ -87,7 +82,7 @@ if(!isset($_SESSION['hasVisited'])){
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav ml-auto" >
             <li class="nav-item item2">
-              <a class="nav-link" id="nav-link2" id="lid" href="#">Home</a>
+              <a class="nav-link" id="nav-link2" id="lid" href="index.php">Home</a>
             <li class="nav-item item2">
               <a class="nav-link" id="nav-link2" href="#">About Us</a>
             </li>
@@ -100,7 +95,7 @@ if(!isset($_SESSION['hasVisited'])){
             </li>
             <li class="nav-item item2">
               <a class="nav-link" id="nav-link2" href="#">eStore</a>
-            </li> 
+            </li>
             <li class="nav-item item2">
               <a class="nav-link" id="nav-link2" href="#">eNews</a>
             </li>
@@ -108,6 +103,6 @@ if(!isset($_SESSION['hasVisited'])){
               <a class="nav-link" id="nav-link2" href="">Contact Us</a>
             </li>
           </ul>
-        </div>    
+        </div>
     </nav>
-  </div>  
+  </div>

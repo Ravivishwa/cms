@@ -25,7 +25,7 @@
         <!-- Add icons to the links using the .nav-icon class
              with font-awesome or any other icon font library -->
         <li class="nav-item has-treeview menu-open">
-          <a href="#" class="nav-link active">           
+          <a href="#" class="nav-link active">
             <p>
               General
               <i class="right fas fa-angle-left"></i>
@@ -142,7 +142,7 @@
               </a>
               <ul class="nav nav-treeview">
                 <li class="nav-item">
-                  <a href="./pages/tables/data.html" class="nav-link">
+                  <a href="./pages/hr/claimapprovalhist.php" class="nav-link">
                     <i class="fas fa-users"></i>
                     <p>Claim Approval History</p>
                   </a>
@@ -166,13 +166,13 @@
                     <p> Leave Approval History</p>
                   </a>
                 </li>
-              </ul> 
+              </ul>
             </li>
           </ul>
 
           <ul class="nav nav-treeview">
             <li class="nav-item has-treeview">
-              <a href="#" class="nav-link">                
+              <a href="#" class="nav-link">
                 <i class="fas fa-calendar-week"></i>
                 <p>
                   Leave Management
@@ -204,7 +204,7 @@
                     <p> Leave Balance</p>
                   </a>
                 </li>
-              </ul> 
+              </ul>
             </li>
           </ul>
 
@@ -230,7 +230,7 @@
                     <p> Claim Balance</p>
                   </a>
                 </li>
-              </ul> 
+              </ul>
             </li>
 
             <li class="nav-item">
